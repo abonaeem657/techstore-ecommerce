@@ -1,0 +1,7 @@
+﻿@model Product
+<div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+<p class="small text-muted">Fields marked * are required.</p>
+<div class="mb-3"><label asp-for="Name" class="form-label">Product name *</label><input asp-for="Name" class="form-control" placeholder="e.g. Everyday laptop" required /><span asp-validation-for="Name"></span></div>
+<div class="mb-3"><label asp-for="Type" class="form-label">Category *</label><input asp-for="Type" class="form-control" placeholder="e.g. Laptops" required /><span asp-validation-for="Type"></span></div>
+<div class="mb-4"><label asp-for="Price" class="form-label">Price *</label><input asp-for="Price" class="form-control" type="number" step="0.01" min="0.01" placeholder="0.00" required /><span asp-validation-for="Price"></span></div>
+

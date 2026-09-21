@@ -1,0 +1,25 @@
+﻿body { min-height:100vh; display:flex; flex-direction:column; background:#f5f7fb; color:#1e293b; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; }
+a { color:#2458b8; }
+h1,h2,h3 { font-weight:700; letter-spacing:-.035em; }
+.btn { border-radius:.6rem; padding:.6rem 1rem; font-weight:600; }
+.btn-primary { background:#2458b8; border-color:#2458b8; }
+.btn-primary:hover { background:#19458f; border-color:#19458f; }
+.btn-outline-primary { color:#2458b8; border-color:#2458b8; }
+.brand-mark { display:inline-grid; place-items:center; width:2rem; height:2rem; margin-right:.4rem; border-radius:.55rem; background:#2458b8; color:white; }
+.hero { padding:clamp(2rem,6vw,5rem); background:#e8effc; border:1px solid #d8e3f7; border-radius:1.25rem; }
+.eyebrow { color:#2458b8; font-size:.8rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+.card { border:1px solid #e1e7f0; border-radius:1rem; box-shadow:0 4px 16px rgb(30 41 59 / 3%); overflow:hidden; }
+.form-panel { max-width:600px; margin:auto; }
+.auth-panel { max-width:460px; }
+.form-label { font-weight:600; }
+.form-control,.form-select { padding:.7rem .85rem; border-radius:.55rem; }
+.product-visual { display:grid; place-items:center; min-height:150px; background:#edf2fa; color:#546784; }
+.product-visual svg { width:80px; height:64px; }
+.product-name { overflow-wrap:anywhere; }
+.price { font-size:1.4rem; font-weight:700; color:#2458b8; }
+.empty-state { padding:3rem 1.5rem; text-align:center; }
+.input-validation-error { border-color:#b42318; }
+.field-validation-error,.validation-summary-errors { color:#b42318; }
+.validation-summary-valid { display:none; }
+:focus-visible { outline:3px solid #2458b8; outline-offset:3px; }
+.skip-link { background:white; padding:1rem; }

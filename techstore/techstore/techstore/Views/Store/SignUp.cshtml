@@ -1,0 +1,18 @@
+﻿@model Users
+@{ ViewData["Title"] = "Sign up"; }
+<section class="card form-panel auth-panel p-4 p-md-5">
+<p class="eyebrow">TechStore</p><h1 class="h3">Create your account</h1>
+<p class="text-muted mb-4">Get started with the TechStore demo.</p>
+<form asp-action="SignUp" method="post">
+<div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+<p class="small text-muted">All fields are required. Use a password between 12 and 128 characters.</p>
+<div class="mb-3"><label asp-for="Name" class="form-label"></label><input asp-for="Name" class="form-control" autocomplete="name" placeholder="Your name" required /><span asp-validation-for="Name"></span></div>
+<div class="mb-3"><label asp-for="Email" class="form-label"></label><input asp-for="Email" class="form-control" type="email" autocomplete="username" placeholder="you@example.com" required /><span asp-validation-for="Email"></span></div>
+<div class="mb-4"><label asp-for="Password" class="form-label"></label><input asp-for="Password" class="form-control" type="password" autocomplete="new-password" required /><span asp-validation-for="Password"></span></div>
+<button type="submit" class="btn btn-primary w-100">Create account</button>
+</form>
+<p class="small text-muted mt-4 mb-2">Already have an account? <a asp-action="Login">Log in</a></p>
+<a asp-action="Viewdata" class="small">Back to products</a>
+</section>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }
+

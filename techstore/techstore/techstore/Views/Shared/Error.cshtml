@@ -1,0 +1,5 @@
+﻿@model ErrorViewModel
+@{ ViewData["Title"] = "Something went wrong"; }
+<div class="card empty-state"><h1 class="h3">Something went wrong</h1><p class="text-muted">We couldn't complete your request. Please try again.</p>
+@if (Model.ShowRequestId) { <p class="small text-muted">Request reference: <code>@Model.RequestId</code></p> }
+<div><a asp-controller="Store" asp-action="Viewdata" class="btn btn-primary">Back to products</a></div></div>

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TechStore</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+<a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
+<header class="bg-white border-bottom">
+    <nav class="navbar navbar-expand-md navbar-light container py-3" aria-label="Main navigation">
+        <a class="navbar-brand fw-bold" asp-area="" asp-controller="Store" asp-action="StartP"><span class="brand-mark">T</span> TechStore</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div id="main-navigation" class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto ms-md-4">
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Store" asp-action="StartP">Home</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Store" asp-action="Viewdata">Products</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Store" asp-action="additem">Add product</a></li>
+            </ul>
+            <div class="d-flex gap-2 mt-3 mt-md-0">
+                @if (User.Identity?.AuthenticationType == "StoreCookie" && User.Identity.IsAuthenticated)
+                {
+                    <span class="align-self-center">Hello, @User.Identity.Name</span>
+                    <form asp-area="" asp-controller="Store" asp-action="Logout" method="post">
+                        <button class="btn btn-outline-primary" type="submit">Log out</button>
+                    </form>
+                }
+                else
+                {
+                <a class="btn btn-outline-primary" asp-area="" asp-controller="Store" asp-action="Login">Log in</a>
+                <a class="btn btn-primary" asp-area="" asp-controller="Store" asp-action="SignUp">Sign up</a>
+                }
+            </div>
+        </div>
+    </nav>
+</header>
+<main id="main-content" class="container py-4 py-md-5" tabindex="-1">
+    @if (TempData["Success"] is string message)
+    {
+        <div class="alert alert-success" role="status">@message</div>
+    }
+    @RenderBody()
+</main>
+<footer class="mt-auto border-top bg-white py-4">
+    <div class="container d-flex flex-wrap justify-content-between gap-2 small text-muted">
+        <span>&copy; @DateTime.Now.Year TechStore · A student MVC project</span>
+        <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy &amp; demo information</a>
+    </div>
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

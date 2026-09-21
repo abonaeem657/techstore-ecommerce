@@ -1,0 +1,23 @@
+﻿# Visual Studio and .NET build output
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Local configuration, account data, and test output
+**/App_Data/
+appsettings.Local.json
+appsettings.*.local.json
+.env
+.env.*
+!.env.example
+TestResults/
+*.log
+
+# Original archives may contain credentials and generated files
+*.rar
+*.zip
+

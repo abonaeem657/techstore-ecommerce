@@ -1,0 +1,11 @@
+﻿@model Product
+@{ ViewData["Title"] = "Add product"; }
+<section class="card form-panel p-4 p-md-5">
+<p class="eyebrow">Product management</p><h1 class="h3 mb-4">Add product</h1>
+<form asp-action="additem" method="post">
+
+<partial name="_ProductFields" model="Model" />
+<div class="d-flex flex-wrap gap-2"><button type="submit" class="btn btn-primary">Add product</button><a asp-action="Viewdata" class="btn btn-outline-secondary">Cancel</a></div>
+</form></section>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }
+
