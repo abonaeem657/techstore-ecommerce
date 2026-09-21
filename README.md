@@ -45,6 +45,26 @@ The project includes basic authentication security improvements:
 - Logout requests are protected with anti-forgery validation
 - Sensitive credentials are not stored in `appsettings.json`
 - Passwords are not displayed in views or error messages
+- 
+  ## Screenshots
+
+### Home Page
+![Home Page](./screenshots/home.png)
+
+### Products Page
+![Products Page](./screenshots/products.png)
+
+### Login Page
+![Login Page](./screenshots/login.png)
+
+### Sign Up Page
+![Sign Up Page](./screenshots/signup.png)
+
+### Add Product Page
+![Add Product Page](./screenshots/add-product.png)
+
+### Edit Product Page
+![Edit Product Page](./screenshots/edit-product.png)
 
 ## Project Structure
 
