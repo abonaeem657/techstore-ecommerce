@@ -2,7 +2,7 @@
 
 TechStore is a simple ASP.NET Core MVC e-commerce project built with C# and .NET 8.
 
-The project was created as a Computer Science portfolio project and demonstrates core web development concepts such as authentication, CRUD operations, validation, search, and responsive UI design.
+The project was created as a Computer Science portfolio project and demonstrates core web development concepts such as authentication, CRUD operations, validation, search, filtering, and responsive UI design.
 
 ## Features
 
@@ -21,6 +21,7 @@ The project was created as a Computer Science portfolio project and demonstrates
 - Responsive Bootstrap interface
 - Empty-state messages
 - Success and error notifications
+- Protected product management pages for authenticated users
 
 ## Technologies Used
 
@@ -40,16 +41,29 @@ The project includes basic authentication security improvements:
 
 - Passwords are stored as secure hashes instead of plain text
 - Authentication cookies are used to maintain login sessions
-- Product management actions require authentication
+- Product creation, editing, and deletion require authentication
 - Logout requests are protected with anti-forgery validation
 - Sensitive credentials are not stored in `appsettings.json`
+- Passwords are not displayed in views or error messages
 
 ## Project Structure
 
 ```text
-Controllers/
-Models/
-Views/
-wwwroot/
-Program.cs
-appsettings.json
+techstore/
+├── Areas/
+├── Controllers/
+├── Data/
+├── Models/
+├── Properties/
+├── Services/
+├── Views/
+├── wwwroot/
+├── Program.cs
+├── appsettings.json
+├── appsettings.Development.json
+└── techstore.csproj
+
+screenshots/
+README.md
+techstore.sln
+.gitignore
