@@ -1,4 +1,4 @@
-# TechStore E-Commerce
+﻿# TechStore E-Commerce
 
 TechStore is a simple ASP.NET Core MVC e-commerce project built with C# and .NET 8.
 
@@ -87,3 +87,22 @@ screenshots/
 README.md
 techstore.sln
 .gitignore
+
+## Run locally
+
+Install the .NET 8 SDK. From this repository root run:
+
+```powershell
+dotnet run --project .\techstore\techstore.csproj
+```
+
+Open the URL printed by `dotnet run`. Browse products without an account; use **Sign up** to create a local demo account before adding, editing, or deleting products. Accounts are stored in `techstore/App_Data/users.txt` by default and that directory is ignored by Git. Products are held in memory and reset when the app restarts. The separate ASP.NET Identity database requires SQL Server LocalDB only when using its Identity pages; the storefront account flow uses the file store.
+
+## Screenshots
+
+Captured from the running local application with an empty catalog:
+
+![TechStore home page](docs/screenshots/store-home.png)
+
+![Product catalog](docs/screenshots/products.png)
+
