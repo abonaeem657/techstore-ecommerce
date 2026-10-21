@@ -23,3 +23,49 @@ h1,h2,h3 { font-weight:700; letter-spacing:-.035em; }
 .validation-summary-valid { display:none; }
 :focus-visible { outline:3px solid #2458b8; outline-offset:3px; }
 .skip-link { background:white; padding:1rem; }
+
+/* Refined storefront surfaces and navigation. */
+.navbar-brand { letter-spacing:-.045em; }
+.navbar .nav-link { font-weight:600; border-radius:.5rem; }
+.navbar .nav-link:hover { background:#edf3fd; color:#19458f; }
+.hero { position:relative; overflow:hidden; isolation:isolate; padding:clamp(2.5rem,6vw,5.5rem); background:linear-gradient(120deg,#e9f0fd 55%,#d3e3fc); min-height:390px; }
+.hero::after { content:""; position:absolute; width:280px; height:280px; right:-60px; top:35px; border:32px solid #a9c8f267; border-radius:50%; z-index:-1; }
+.hero h1 { max-width:12ch; font-size:clamp(3rem,5vw,5rem); line-height:1.04; }
+.hero .lead { max-width:36rem; color:#536681 !important; }
+.card { transition:transform .18s ease,box-shadow .18s ease; }
+.card:hover { transform:translateY(-3px); box-shadow:0 16px 32px rgb(30 41 59 / 10%); }
+.form-control:focus,.form-select:focus { border-color:#2458b8; box-shadow:0 0 0 .2rem #2458b82b; }
+@media(prefers-reduced-motion:reduce){.card{transition:none}}
+
+/* Portfolio storefront refresh. */
+body{background:#f7f6f3;color:#172838}
+a{color:#254a68}
+.brand-mark{background:#172838}
+.btn-primary{background:#172838;border-color:#172838;color:#fff}
+.btn-primary:hover,.btn-primary:focus{background:#294c62;border-color:#294c62;color:#fff}
+.btn-outline-primary{color:#172838;border-color:#889ba7}
+.btn-outline-primary:hover{background:#172838;border-color:#172838;color:#fff}
+.price{color:#254a68}
+.product-visual{background:#e9eef0;color:#405d6d}
+.eyebrow{color:#ad7843}
+.storefront-hero{min-height:500px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:clamp(1rem,4vw,4rem);padding:clamp(2rem,5vw,5rem);border-radius:1.4rem;background:radial-gradient(circle at 85% 25%,#31526a 0,#172b3d 35%,#102332 70%);color:#fff;overflow:hidden}
+.storefront-copy{position:relative;z-index:1}
+.storefront-copy .eyebrow{color:#e0bb88}
+.storefront-hero h1{font-size:clamp(3rem,5.2vw,5.2rem);line-height:1.03;letter-spacing:-.055em;font-weight:750;margin:.8rem 0 1.4rem}
+.storefront-hero h1 em{font-style:normal;color:#e2bc89}
+.storefront-copy>p:not(.eyebrow){font-size:1.07rem;color:#d9e3e7;max-width:35rem;line-height:1.75}
+.storefront-hero .btn-primary{background:#e4c292;border-color:#e4c292;color:#172838}
+.storefront-hero .btn-primary:hover{background:#f1d6af;border-color:#f1d6af}
+.storefront-hero .btn-outline-light{border-color:#8fa3ad}
+.device-stage{height:350px;position:relative;display:grid;place-items:center;transform:rotate(-5deg)}
+.device-screen{width:min(100%,400px);height:285px;border:12px solid #121d25;border-radius:1.1rem;background:linear-gradient(145deg,#41647d,#172b3d 60%,#0e1c28);box-shadow:0 32px 60px #050e17a6,inset 0 0 0 1px #ffffff4d;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.device-screen span{font-size:clamp(2.5rem,4vw,4rem);letter-spacing:-.07em;font-weight:850;line-height:.9}
+.device-screen small{color:#e4c292;font-size:.6rem;font-weight:750;letter-spacing:.22em;margin-top:1.5rem}
+.device-base{position:absolute;bottom:4px;width:85%;height:14px;border-radius:0 0 50% 50%;background:#b6c0c5;box-shadow:0 10px 20px #0006}
+.storefront-intro{text-align:center;padding:4rem 1rem 1.8rem}.storefront-intro h2{font-size:clamp(2rem,3.5vw,3.2rem);max-width:21ch;margin:.5rem auto;line-height:1.15}
+.storefront-features{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:3rem}
+.storefront-features article{background:#fff;border:1px solid #e4e5e4;border-radius:1rem;padding:1.8rem;box-shadow:0 12px 30px #17283808}
+.storefront-features span{font-size:.73rem;letter-spacing:.15em;font-weight:800;color:#ad7843}
+.storefront-features h3{font-size:1.3rem;margin:1rem 0 .5rem}
+.storefront-features p{color:#66757b;margin:0}
+@media(max-width:767px){.storefront-hero{grid-template-columns:1fr;min-height:0}.device-stage{height:230px;transform:none}.device-screen{height:210px}.device-base{bottom:0}.storefront-features{grid-template-columns:1fr}.storefront-intro{padding-top:3rem}}

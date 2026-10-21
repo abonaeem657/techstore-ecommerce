@@ -1,8 +1,12 @@
 ﻿# TechStore E-Commerce
 
-TechStore is a simple ASP.NET Core MVC e-commerce project built with C# and .NET 8.
+TechStore is the main ASP.NET Core MVC storefront in this workspace, built with C# and .NET 8.
+
+The storefront has a refined responsive visual style, including a more prominent landing hero, clearer navigation, and improved focus and form states.
 
 The project was created as a Computer Science portfolio project and demonstrates core web development concepts such as authentication, CRUD operations, validation, search, filtering, and responsive UI design.
+
+The separate `techstore-clean` project is an earlier prototype retained for reference. This is the fuller version with hashed passwords, cookie authentication, search, filtering, and protected product management.
 
 ## Features
 
@@ -45,26 +49,22 @@ The project includes basic authentication security improvements:
 - Logout requests are protected with anti-forgery validation
 - Sensitive credentials are not stored in `appsettings.json`
 - Passwords are not displayed in views or error messages
-- 
-  ## Screenshots
+
+## Screenshots
+
+New screenshots captured from the running local application. The product cards show three temporary example products added only for the catalog screenshot; a fresh run starts with an empty in-memory catalog.
 
 ### Home Page
-![Home Page](./screenshots/home.png)
+![Home Page](./screenshots/home-new.png)
 
 ### Products Page
-![Products Page](./screenshots/products.png)
+![Products Page](./screenshots/products-new.png)
 
 ### Login Page
-![Login Page](./screenshots/login.png)
+![Login Page](./screenshots/login-new.png)
 
 ### Sign Up Page
-![Sign Up Page](./screenshots/signup.png)
-
-### Add Product Page
-![Add Product Page](./screenshots/add-product.png)
-
-### Edit Product Page
-![Edit Product Page](./screenshots/edit-product.png)
+![Sign Up Page](./screenshots/signup-new.png)
 
 ## Project Structure
 
@@ -87,6 +87,7 @@ screenshots/
 README.md
 techstore.sln
 .gitignore
+```
 
 ## Run locally
 
@@ -97,12 +98,3 @@ dotnet run --project .\techstore\techstore.csproj
 ```
 
 Open the URL printed by `dotnet run`. Browse products without an account; use **Sign up** to create a local demo account before adding, editing, or deleting products. Accounts are stored in `techstore/App_Data/users.txt` by default and that directory is ignored by Git. Products are held in memory and reset when the app restarts. The separate ASP.NET Identity database requires SQL Server LocalDB only when using its Identity pages; the storefront account flow uses the file store.
-
-## Screenshots
-
-Captured from the running local application with an empty catalog:
-
-![TechStore home page](docs/screenshots/store-home.png)
-
-![Product catalog](docs/screenshots/products.png)
-
