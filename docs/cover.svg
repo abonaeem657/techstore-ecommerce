@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420" role="img" aria-labelledby="title desc">
+<title id="title">TECHSTORE</title><desc id="desc">A focused storefront with a thoughtful path to every product.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0b1726"/><stop offset="1" stop-color="#203749"/></linearGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".07"/></pattern></defs>
+<rect width="1400" height="420" rx="22" fill="url(#bg)"/><rect width="1400" height="420" rx="22" fill="url(#grid)"/>
+<circle cx="1274" cy="65" r="154" fill="#e7c184" opacity=".07"/><path d="M0 374C341 269 606 432 969 326" fill="none" stroke="#e7c184" stroke-opacity=".18" stroke-width="3"/>
+<rect x="69" y="64" width="12" height="12" rx="3" fill="#e7c184"/><text x="97" y="76" fill="#e7c184" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="4">COMMERCE, MADE CLEAR</text>
+<text x="69" y="174" fill="#ffffff" font-family="Arial,sans-serif" font-size="62" font-weight="800" letter-spacing="-2">TECHSTORE</text>
+<rect x="71" y="207" width="86" height="5" rx="3" fill="#e7c184"/>
+<text x="71" y="266" fill="#eff2e5" font-family="Arial,sans-serif" font-size="23">A focused storefront with a thoughtful path to every product.</text>
+<rect x="69" y="323" width="615" height="52" rx="13" fill="#ffffff" fill-opacity=".09" stroke="#ffffff" stroke-opacity=".14"/>
+<text x="94" y="355" fill="#e7c184" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1">ASP.NET CORE  /  C#  /  RAZOR</text>
+<rect x="950" y="103" width="363" height="235" rx="19" fill="#172b3a" stroke="#779a9a" stroke-opacity=".55"/><rect x="975" y="128" width="313" height="165" rx="8" fill="#d5dedb"/><rect x="994" y="148" width="129" height="117" rx="8" fill="#eef1ea"/><rect x="1137" y="148" width="129" height="117" rx="8" fill="#eef1ea"/><path d="M1022 228h72l-9-15h-54zM1035 213v-44h46v44" fill="none" stroke="#496774" stroke-width="5"/><circle cx="1201" cy="192" r="28" fill="none" stroke="#b88949" stroke-width="7"/><path d="M1190 221l-15 24h52l-15-24" fill="#b88949"/><rect x="1092" y="306" width="80" height="9" rx="4" fill="#e7c184"/><rect x="1015" y="337" width="234" height="10" rx="5" fill="#6c8991"/>
+</svg>

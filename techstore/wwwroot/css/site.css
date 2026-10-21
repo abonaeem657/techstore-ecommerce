@@ -69,3 +69,7 @@ a{color:#254a68}
 .storefront-features h3{font-size:1.3rem;margin:1rem 0 .5rem}
 .storefront-features p{color:#66757b;margin:0}
 @media(max-width:767px){.storefront-hero{grid-template-columns:1fr;min-height:0}.device-stage{height:230px;transform:none}.device-screen{height:210px}.device-base{bottom:0}.storefront-features{grid-template-columns:1fr}.storefront-intro{padding-top:3rem}}
+.product-visual.product-photo{display:block;min-height:0;aspect-ratio:1/1;background-image:url('/images/demo/tech-products-triptych.png');background-size:300% 100%;background-repeat:no-repeat}
+.product-photo--laptop{background-position:left center}
+.product-photo--audio{background-position:center center}
+.product-photo--keyboard{background-position:right center}

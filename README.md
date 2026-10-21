@@ -1,4 +1,8 @@
-﻿# TechStore E-Commerce
+![TechStore E-Commerce cover](docs/cover.svg)
+
+# TechStore E-Commerce
+
+[Screenshots](#screenshots) | [Features](#features) | [Run locally](#run-locally)
 
 TechStore is the main ASP.NET Core MVC storefront in this workspace, built with C# and .NET 8.
 
@@ -52,19 +56,23 @@ The project includes basic authentication security improvements:
 
 ## Screenshots
 
-New screenshots captured from the running local application. The product cards show three temporary example products added only for the catalog screenshot; a fresh run starts with an empty in-memory catalog.
+Captured from the running local application. The product cards show three temporary example products added only for the gallery; a fresh run starts with an empty in-memory catalog. Laptop, audio, and accessories use illustrative generated studio photography, not photos of real inventory. Other categories retain the neutral placeholder.
 
-### Home Page
-![Home Page](./screenshots/home-new.png)
+| Storefront | Product catalog |
+| --- | --- |
+| ![TechStore home page](screenshots/home-new.png) | ![TechStore product catalog](screenshots/products-new.png) |
 
-### Products Page
-![Products Page](./screenshots/products-new.png)
+| Product details | Narrow storefront |
+| --- | --- |
+| ![Product detail page](screenshots/product-detail.png) | ![TechStore on a narrow screen](screenshots/home-mobile.png) |
 
-### Login Page
-![Login Page](./screenshots/login-new.png)
+<details><summary>Account screens</summary>
 
-### Sign Up Page
-![Sign Up Page](./screenshots/signup-new.png)
+| Login | Sign up |
+| --- | --- |
+| ![TechStore login](screenshots/login-new.png) | ![TechStore sign up](screenshots/signup-new.png) |
+
+</details>
 
 ## Project Structure
 
