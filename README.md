@@ -10,7 +10,7 @@ The storefront has a refined responsive visual style, including a more prominent
 
 The project was created as a Computer Science portfolio project and demonstrates core web development concepts such as authentication, CRUD operations, validation, search, filtering, and responsive UI design.
 
-The separate `techstore-clean` project is an earlier prototype retained for reference. This is the fuller version with hashed passwords, cookie authentication, search, filtering, and protected product management.
+This version includes hashed passwords, cookie authentication, search, filtering, and protected product management.
 
 ## Features
 
